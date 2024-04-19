@@ -36,7 +36,7 @@ export default function Login() {
     };
 
     return (
-        <div style={{ padding: '20px', maxWidth: '400px', margin: '0 auto', color: 'var(--color-latte), '}}>
+        <div style={{ padding: '20px', maxWidth: '400px', margin: '0 auto', color: 'var(--color-latte)', }}>
             <h1 style={{ textAlign: 'center'}}>Login</h1>
             {error && <p style={{ color: 'red' }}>{error}</p>}
             <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
