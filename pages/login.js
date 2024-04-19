@@ -36,28 +36,28 @@ export default function Login() {
     };
 
     return (
-        <div style={{ padding: '20px', maxWidth: '400px', margin: '0 auto', color: 'var(--color-latte)', }}>
+        <div style={{ padding: '20px', maxWidth: '400px', margin: '0 auto', color: 'var(--color-latte)' }}>
             <h1 style={{ textAlign: 'center'}}>Login</h1>
             {error && <p style={{ color: 'red' }}>{error}</p>}
-            <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', gap: '10px', }}>
+            <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 <input
                     type="email"
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    style={{ padding: '10px', borderRadius: '5px', }}
+                    style={{ padding: '10px', borderRadius: '5px' }}
                 />
                 <input
                     type="password"
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    style={{ padding: '10px', borderRadius: '5px', }}
+                    style={{ padding: '10px', borderRadius: '5px' }}
                 />
-                <button type="submit" style={{background: 'var(--color-macchiato)', color: 'var(--color-latte', padding: '10px', borderRadius: '5px', border: 'none', }}>Login</button>
+                <button type="submit" style={{background: 'var(--color-macchiato)', color: 'var(--color-latte', padding: '10px', borderRadius: '5px', border: 'none' }}>Login</button>
             </form>
             <p style={{ textAlign: 'center', marginTop: '20px' }}>Don't have an account?{''}
-                <button onClick={navigateToSignUp} style={{ background: 'transparent', border: 'none', color: 'var(--color-frappe', cursor: 'pointer', }}>Sign Up</button>
+                <button onClick={navigateToSignUp} style={{ background: 'transparent', border: 'none', color: 'var(--color-frappe', cursor: 'pointer' }}>Sign Up</button>
             </p>
         </div>
     );
