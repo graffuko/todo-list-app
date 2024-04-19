@@ -39,20 +39,20 @@ export default function Login() {
         <div style={{ padding: '20px', maxWidth: '400px', margin: '0 auto', color: 'var(--color-latte)', }}>
             <h1 style={{ textAlign: 'center'}}>Login</h1>
             {error && <p style={{ color: 'red' }}>{error}</p>}
-            <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', gap: '10px', }}>
                 <input
                     type="email"
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    style={{ padding: '10px', borderRadius: '5px' }}
+                    style={{ padding: '10px', borderRadius: '5px', }}
                 />
                 <input
                     type="password"
                     placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    style={{ padding: '10px', borderRadius: '5px' }}
+                    style={{ padding: '10px', borderRadius: '5px', }}
                 />
                 <button type="submit" style={{background: 'var(--color-macchiato)', color: 'var(--color-latte', padding: '10px', borderRadius: '5px', border: 'none', }}>Login</button>
             </form>
