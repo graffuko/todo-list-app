@@ -56,7 +56,7 @@ export default function Login() {
                 />
                 <button type="submit" style={{background: 'var(--color-macchiato)', color: 'var(--color-latte', padding: '10px', borderRadius: '5px', border: 'none' }}>Login</button>
             </form>
-            <p style={{ textAlign: 'center', marginTop: '20px' }}>Don't have an account?{''}
+            <p style={{ textAlign: 'center', marginTop: '20px' }}>Dont have an account?{''}
                 <button onClick={navigateToSignUp} style={{ background: 'transparent', border: 'none', color: 'var(--color-frappe', cursor: 'pointer' }}>Sign Up</button>
             </p>
         </div>
